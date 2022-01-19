@@ -1,4 +1,4 @@
-$host.ui.RawUI.WindowTitle = ìClear Windows Cacheî
+$host.ui.RawUI.WindowTitle = ‚ÄúClear Windows Cache‚Äù
 $objShell = New-Object -ComObject Shell.Application
 $objFolder = $objShell.Namespace(0xA)
 $WinTemp = "c:\Windows\Temp\*"
@@ -15,11 +15,11 @@ Set-Location C:\Windows\Prefetch
 sleep 1
 
 #Set-Location 'C:\Users\%userprofile%\Document'
-#C:\Documents and Settingsù Documents #C:\Users\RichardGithinji\Documents #C:\Users\%userprofile%\Documents
+#C:\Documents and Settings¬ù Documents #C:\Users\RichardGithinji\Documents #C:\Users\%userprofile%\Documents
 #Remove-Item .\*\Local Settings\temp\* -Recurse -Force -ErrorAction SilentlyContinue
 
 Set-Location C:\Users
-Remove-Item .\*\Appdata\Local\Temp\*ù -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item .\*\Appdata\Local\Temp\*¬ù -Recurse -Force -ErrorAction SilentlyContinue
 
 sleep 1
 write-Host "Temp Files removal complete" -ForegroundColor Green
@@ -47,6 +47,12 @@ write-Host "Clearing Downloads complete" -ForegroundColor Green
 write-Host "Running the Windows Disk Clean up Tool" -ForegroundColor Blue
 cleanmgr /sagerun:1 | out-Null 
 write-Host "Windows Disk Clean up Tool" -ForegroundColor Green
+
+#5# Running Volume Disk repair
+#write-Host "Running Volume Disk repair" -ForegroundColor Blue
+#get-volume
+#repair-volume c-spotfix
+#repair-volume d-offlinescanandrepair
 
 $([char]7)
 Sleep 2
