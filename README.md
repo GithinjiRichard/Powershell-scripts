@@ -1,4 +1,6 @@
 # AADBulkUserPropertiesUpdate.ps1
 
 # *CSV Template* 
-![image](https://user-images.githubusercontent.com/88572955/158152298-b61c2c00-8e73-4c40-a57b-bca021e9b2e4.png)
+
+
+![image](https://user-images.githubusercontent.com/88572955/164172942-2d987981-e262-4525-af96-81407c3dc30f.png)
